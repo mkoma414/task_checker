@@ -37,6 +37,7 @@ export const taskRequest: (
     switch (action) {
       case "fetchTasks":
         const fetchTasks = await api.get("/");
+        console.log(fetchTasks);
         return fetchTasks.data;
       default:
         return null;
