@@ -6,7 +6,8 @@ type action = "fetchGenres" | "createGenres" | "deleteGenres";
 type parameter = { data: GenreType };
 
 const api = axiosBase.create({
-  baseURL: "http://localhost:3001/genres",
+  // baseURL: "http://localhost:3001/genres",
+  baseURL: "https://todo-advance-back.onrender.com/genres",
   responseType: "json",
 });
 
