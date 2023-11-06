@@ -6,8 +6,7 @@ type action = "fetchTasks" | "createTasks" | "updateTasks" | "deleteTasks" | "up
 type parameter = { data: TaskType; status?: number };
 
 const api = axiosBase.create({
-  // baseURL: "http://localhost:3001/tasks",
-  baseURL: "https://todo-advance-back.onrender.com/tasks",
+  baseURL: "https://todo-advance-back.onrender.com/api/v1/tasks",
   responseType: "json",
 });
 
